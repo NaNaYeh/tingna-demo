@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ting-Na Web front-end design</title>
+<style>
+
+* { margin:0px; padding:0px; box-sizing:border-box; font-family: Meiryo, "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif; box-sizing: border-box; list-style:none; }
+html{ height:100%;
+-webkit-text-size-adjust:none;/*修正旋轉後文字會變大*/
+-webkit-overflow-scrolling:touch;/*修正ios滾動順暢*/
+}
+
+.wrapper{}
+.header{ display:flex; justify-content:center; align-items:center; height:500px; background-color:#ccc; }
+
+.header .own{ margin-right:10px; text-align:center; border: 1px solid red;}
+.header .own .pic{ width:250px; height:250px; border-radius:50%; overflow:hidden; }
+.header .own .pic img{ display:block; width:100%; height:auto;}
+.header .txt_1{ border: 1px solid red;}
+.container{ max-width:1000px; margin:0px auto; border:1px solid green;}
+.block_1{}
+.block_1 .title{}
+.block_1 .content{}
+.block_1 .content a.piece{ display:block;  }
+.block_1 .content a.piece .pic{ width:200px; height:200px; overflow:hidden; background-color:#ccc; }
+.block_1 .content a.piece .pic img{ width:100%; height:100%; object-fit:cover; }
+</style>
+</head>
+<body>
+	<!--wrapper 開始-->
+	<div class="wrapper">
+		<!--header-->
+		<div class="header">
+			<!--own-->
+			<div class="own">
+				<div class="pic"><img src="images/01.jpg"></div>
+			</div>
+			<!--own-->
+			<!--txt_1-->
+			<div class="txt_1">
+				<ul>
+					<li>Ting-Na Yeh</li>
+					<li>葉婷娜</li>
+					<li>Phone： <a href="tel:0987013012">0987013012</a></li>
+					<li>Mail：<a href="mailto:w2054120@gmail.com">w2054120@gmail.com</a></li>
+				</ul>
+			</div>
+			<!--txt_1-->
+		</div>
+		<!--header-->
+		<!--container-->
+		<div class="container">
+			<!--block_1-->
+			<div class="block_1">
+				<h2 class="title">Projects</h2>
+				<div class="content">
+					<!--piece-->
+					<a href="https://events.ettoday.net/outdoor-media/videolist.php7" class="piece">
+						<div class="pic">
+							<img src="" alt="捷運廣告">
+						</div>
+						<h3>北捷廣告</h3>
+					</a>
+					<!--piece-->
+					<!--piece-->
+					<a href="https://events.ettoday.net/outdoor-media/videolist.php7" class="piece">
+						<div class="pic">
+							<img src="" alt="捷運廣告">
+						</div>
+						<h3>北捷廣告</h3>
+					</a>
+					<!--piece-->
+				</div>
+				<!--block_1-->
+			</div>
+		</div>
+		<!--container-->
+		<!--footer-->
+		<div class="footer"></div>
+		<!--footer-->
+	</div>
+	<!--wrapper 結束-->
+</body>
+</html>
